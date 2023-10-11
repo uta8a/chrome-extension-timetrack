@@ -81,7 +81,7 @@ chrome.runtime.onMessage.addListener((message, _, sendResponse) => {
 				console.log("projectId", projectId);
 				const query = {
 					description: message.entry,
-					created_with: "UPJ chrome extension",
+					created_with: "TimeTrack chrome extension",
 					duration: -1,
 					project_id: projectId,
 					start: new Date().toISOString(),

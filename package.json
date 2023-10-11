@@ -1,0 +1,29 @@
+{
+  "name": "chrome-extension-timetrack",
+  "version": "1.0.0",
+  "description": "chrome extension for time tracking with toggl and GitHub Projects",
+  "private": true,
+  "scripts": {
+    "build": "tsc && vite build",
+    "check": "biome format --write ./src ./vite-env.d.ts ./vite.config.ts && biome check --apply ./src ./vite-env.d.ts ./vite.config.ts",
+    "setup": "bash ./scripts/generate_manifest.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uta8a/chrome-extension-timetrack.git"
+  },
+  "keywords": [],
+  "author": "Masanori Tani (a.k.a. uta8a)",
+  "license": "APL-2.0",
+  "bugs": {
+    "url": "https://github.com/uta8a/chrome-extension-timetrack/issues"
+  },
+  "homepage": "https://github.com/uta8a/chrome-extension-timetrack#readme",
+  "devDependencies": {
+    "@biomejs/biome": "1.2.2",
+    "@types/chrome": "^0.0.237",
+    "@types/node": "^20.2.6",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9"
+  }
+}
